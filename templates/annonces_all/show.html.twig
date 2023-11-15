@@ -1,0 +1,30 @@
+{% extends 'client.html.twig' %}
+
+{% block title %}Annonces{% endblock %}
+
+{% block body %}
+    <h1>Annonces</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Title</th>
+                <td>{{ annonce.title }}</td>
+            </tr>
+            <tr>
+                <th>Price</th>
+                <td>{{ annonce.price }}</td>
+            </tr>
+            <tr>
+                <th>Content</th>
+                <td>{{ annonce.content }}</td>
+            </tr>
+            <tr>
+                <th>Createdat</th>
+                <td>{{ annonce.createdat ? annonce.createdat|date('Y-m-d') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_annonces_all_index') }}">back to list</a>
+{% endblock %}

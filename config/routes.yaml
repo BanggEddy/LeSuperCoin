@@ -1,0 +1,57 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+#ACCUEILCONTROLLER
+acceuil:
+    path: /acceuil
+    controller: 'App\Controller\Acceuil\AcceuilController::index'
+homepage:
+    path: /
+    controller: 'App\Controller\Acceuil\AcceuilController::acceuil'
+accueilclient:
+    path: /accueilclient
+    controller: 'App\Controller\Acceuil\AcceuilController::acceuilclient'
+acceuiladmin:
+    path: /acceuiladmin
+    controller: 'App\Controller\Acceuil\AcceuilController::acceuiladmin'
+#ContactController
+contact:
+    path: /contact
+    controller: 'App\Controller\Contact\ContactController::index'
+
+contactclient:
+    path: /contactclient
+    controller: 'App\Controller\Contact\ContactController::contact/client'
+#make:auth & make:registration
+register:
+    path: /register
+    controller: App\Controller\RegistrationController::register
+security_login:
+    path: /login
+    controller: Symfony\Bundle\FrameworkBundle\Controller\RedirectController::urlRedirectAction
+security_logout:
+    path: /logout
+login:
+    path: /login
+    controller: App\Controller\SecurityController::login
+#AnnoncesClient:
+annonces_client_new:
+    path: /annonces/client/new
+    controller: 'App\Controller\AnnoncesClient\AnnoncesClientController::new'
+    methods: ['GET', 'POST']
+annonces_client:
+    path: /annonces/client
+    controller: 'App\Controller\AnnoncesClient\AnnoncesClientController::index'
+annonces_all:
+    path: /annonces/all
+    controller: 'App\Controller\AnnoncesAll\AnnoncesAllController::index'
+#ADMIN
+categories:
+    path: /categories
+    controller: 'App\Controller\Categories\CategoriesController::index'
+annonces:
+    path: /annonces
+    controller: 'App\Controller\Annonces\AnnoncesController::index'
+    

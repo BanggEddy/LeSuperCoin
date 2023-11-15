@@ -1,0 +1,13 @@
+{% extends 'client.html.twig' %}
+
+{% block title %}Edit Annonces{% endblock %}
+
+{% block body %}
+    <h1>Edit Annonces</h1>
+
+    {{ include('annonces_all/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_annonces_all_index') }}">back to list</a>
+
+    {{ include('annonces_all/_delete_form.html.twig') }}
+{% endblock %}
