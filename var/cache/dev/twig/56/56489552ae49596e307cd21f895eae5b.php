@@ -91,13 +91,13 @@ LeSuperCoin</a>
           <a class=\"nav-link\" href=\"";
         // line 34
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("categories");
-        echo "\"> <button type=\"button\" class=\"btn btn-danger\" style=\"width: 100% !important;transition:1s\"> Voir les catégories</button> </a>
+        echo "\"> <button type=\"button\" class=\"btn btn-danger\" style=\"width: 100% !important;transition:1s\"> Catégories</button> </a>
         </li>
         <li class=\"nav-item\">
           <a class=\"nav-link\" href=\"";
         // line 37
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("annonces");
-        echo "\"> <button type=\"button\" class=\"btn btn-danger\" style=\"width: 100% !important;transition:1s\"> Voir les annonces </button> </a>
+        echo "\"> <button type=\"button\" class=\"btn btn-danger\" style=\"width: 100% !important;transition:1s\"> Annonces </button> </a>
         </li>
         <li class=\"nav-item\">
           <a class=\"nav-link\" href=\"";
@@ -255,10 +255,10 @@ LeSuperCoin</a>
     <div class=\"collapse navbar-collapse\" id=\"navbarNav\">
           <ul class=\"navbar-nav ms-auto\">
         <li class=\"nav-item\">
-          <a class=\"nav-link\" href=\"{{ path('categories') }}\"> <button type=\"button\" class=\"btn btn-danger\" style=\"width: 100% !important;transition:1s\"> Voir les catégories</button> </a>
+          <a class=\"nav-link\" href=\"{{ path('categories') }}\"> <button type=\"button\" class=\"btn btn-danger\" style=\"width: 100% !important;transition:1s\"> Catégories</button> </a>
         </li>
         <li class=\"nav-item\">
-          <a class=\"nav-link\" href=\"{{ path('annonces') }}\"> <button type=\"button\" class=\"btn btn-danger\" style=\"width: 100% !important;transition:1s\"> Voir les annonces </button> </a>
+          <a class=\"nav-link\" href=\"{{ path('annonces') }}\"> <button type=\"button\" class=\"btn btn-danger\" style=\"width: 100% !important;transition:1s\"> Annonces </button> </a>
         </li>
         <li class=\"nav-item\">
           <a class=\"nav-link\" href=\"{{ path('acceuil') }}\"> <button type=\"button\" class=\"btn btn-warning\" style=\"width: 100% !important;transition:1s\"> Déconnection </button> </a>
@@ -285,6 +285,6 @@ LeSuperCoin</a>
 
     </body>
 </html>
-", "admin.html.twig", "/var/www/html/lesupercoindavidli/templates/admin.html.twig");
+", "admin.html.twig", "/var/www/html/LeSuperCoin/templates/admin.html.twig");
     }
 }
